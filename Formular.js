@@ -1,11 +1,12 @@
 const fs = require("fs");
-// 백준 베출시 path 경로 /dev/stdin으로 변경
-const input = fs.readFileSync("../input.txt").toString().trim().split(" ");
+// 백준 베출시 path 경로 0, 'utf8'로 변경
+const input = fs.readFileSync('./input.txt').toString().split(' ');
 
-function main() {
-    console.log(input)
-}
+const A = parseInt(input[0]);
+const B = parseInt(input[1]);
 
-if (require.main === module) {
-    main()
-}
+console.log(A + B);
+
+
+
+
